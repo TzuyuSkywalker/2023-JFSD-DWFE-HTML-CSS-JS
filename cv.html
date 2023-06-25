@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="aplication-name" content="Curriculum Vitae">
+        <meta name="description" content="CV de Chou Tzuyu">
+        <meta name="author" content="Tzuyu">
+        <meta name="viewport" content="width=device-width, initial-scale-1">
+        <link rel="stylesheet" href="estilo.css">
+        <script src="programacion.js"></script>
+        <title>CV</title>
+    </head>
+    <body onload="dinamico()">
+        <header style="border: 2px solid black;">
+            <h1>Curriculum Vitae</h1>
+        </header>
+        <main>
+            <div class="clearfix">
+                <img id ="fotoPerfil" src="perfil.jpg" alt="Foto 4x4" width="230em" onmouseover="aumentarFoto('fotoPerfil')" onmouseleave="disminuirFoto('fotoPerfil')" style="border: 2px solid black;">
+                <article>
+                    <p>
+                        <b>Nombre Completo:</b>
+                        Chou Tzuyu
+                    </p>
+                    <p>
+                        <b>Tipo y Número de Documento</b>
+                        D.N.I. 42.146.999
+                    </p>
+                    <p>
+                        <b>Fecha de Nacimiento</b>
+                        14 de junio de 1999
+                    </p>
+                    <p>
+                        <b>Nacionalidad:</b>
+                        Taiwan
+                    </p>
+                    <p>
+                        <b>Estado Civil:</b>
+                        Soltera
+                    </p>
+                    <p>
+                        <b>Localidad:</b>
+                        Cheongdam-dong, Seúl, South Korea
+                    </p>
+                    <p>
+                        <b>Correo Electrónico:</b>
+                        TWICETzuyu@gmail.com
+                    </p>
+                </article>
+            </div>
+            <section id="trabajos">
+                <h2><u>Experiencia Laboral</u></h2>
+            </section>
+            <section>
+                <h2 onclick="expandirContraer()"><u>Educación</u></h2>
+                <div id="educacion">
+                    <h3>Hanlim Multi Art School Seoul - Overseas Chinese High School</h3>
+                    <p>
+                        <b>Título Obtenido:</b>
+                        Secundario Completo (Año 2019)
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
