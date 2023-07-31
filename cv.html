@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="aplication-name" content="Curriculum Vitae" />
+    <meta name="description" content="CV de Chou Tzuyu" />
+    <meta name="author" content="Arispe, Franco Gabriel" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="programacion.js" defer></script>
+    <title>CV</title>
+  </head>
+  <body onload="dinamico()">
+    <header>
+      <h1>Curriculum Vitae</h1>
+    </header>
+    <main>
+      <section class="informacion-personal">
+        <div
+          class="foto-perfil"
+          onmouseover="aumentarFoto()"
+          onmouseleave="disminuirFoto()"
+        >
+          <img id="fotoPerfil" src="perfil.jpg" alt="Foto 4x4" />
+        </div>
+        <div class="datos-personales">
+          <h2>Nombre Completo</h2>
+          <p>Chou Tzuyu</p>
+          <p>Tipo y Número de Documento D.N.I. 42.146.999</p>
+          <p>Fecha de Nacimiento 14 de junio de 1999</p>
+          <p>Nacionalidad: Taiwan</p>
+          <p>Estado Civil: Soltera</p>
+          <p>Localidad: Cheongdam-dong, Seúl, South Korea</p>
+          <p>Correo Electrónico: TWICETzuyu@gmail.com</p>
+        </div>
+      </section>
+      <section class="seccion">
+        <h2 onclick="toggleEducacion()">Educación</h2>
+        <div class="contenido" id="educacion"></div>
+      </section>
+      <section class="seccion">
+        <h2 onclick="toggleExperienciaLaboral()">Experiencia Laboral</h2>
+        <div class="contenido" id="experienciaLaboral"></div>
+      </section>
+      <section class="seccion">
+        <h2 onclick="toggleDemo()">Demo</h2>
+        <div class="contenido" id="demo"></div>
+      </section>
+    </main>
+  </body>
+</html>

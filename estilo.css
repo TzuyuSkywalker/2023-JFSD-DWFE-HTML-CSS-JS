@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #333;
+  background-image: url("fondocv.jpg");
+  background-size: cover;
+}
+
+header {
+  background: none;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+p {
+  margin: 0;
+}
+
+.informacion-personal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  margin-right: 2rem;
+}
+
+.foto-perfil img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.datos-personales {
+  flex: 1;
+}
+
+.datos-personales h2 {
+  margin-bottom: 1rem;
+}
+
+.seccion {
+  margin-bottom: 3rem;
+}
+
+.experiencia-item {
+  border-left: 4px solid #ff5fa2;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.boton-toggle {
+  background: none;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-toggle:hover {
+  background: none;
+  color: #fff;
+}
+
+.contenido {
+  display: none;
+}
+
+.contenido.active {
+  display: block;
+  animation: revealContent 0.5s ease;
+}
+
+@keyframes revealContent {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion {
+  width: 100%;
+}
+
+.informacion-personal {
+  flex-direction: row;
+  align-items: center;
+}
+
+.datos-personales h2 {
+  margin-bottom: 0;
+  margin-right: 2rem;
+}
